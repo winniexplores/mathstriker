@@ -2,14 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <title>Math Striker</title>
   <meta name="description" content="A vertical arcade shooter where your score is your health and the enemies are numbers.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-fullscreen">
+  <meta name="theme-color" content="#02060f">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <main>
     <canvas id="game" width="480" height="720" aria-label="Math Striker game canvas"></canvas>
+    <section id="desktop-notice" hidden>
+      <h1>MATH <span>STRIKER</span></h1>
+      <p>This game is built for <strong>phones</strong>.</p>
+      <p>Open this page on your phone to play.</p>
+    </section>
   </main>
   <noscript>Math Striker needs JavaScript enabled.</noscript>
   <script type="module" src="src/main.js"></script>

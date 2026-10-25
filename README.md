@@ -6,16 +6,23 @@ you are deleted.
 
 Built with plain HTML5 Canvas and ES modules. No framework, no bundler, no build step.
 
-## Play
+## Play (phones only)
 
-| Action | Keys |
+Math Striker is built for **phones**. On a computer the page just asks you to open it on
+your phone. (To test on a computer, add `?desktop=1` to the address; dragging with the
+mouse works like a finger.)
+
+| Action | Gesture |
 | --- | --- |
-| Move | `WASD` or arrow keys |
-| Shoot | `Space` (hold) |
-| Prime Bomb | `B` |
-| Pause | `P` or `Esc` |
-| Mute | `M` |
-| Menu | `1` / `2` or `←` `→` to pick a pilot, `Enter` (or click) to start |
+| Pick a pilot / start | Tap a pilot card |
+| Move | Drag one finger anywhere (the ship follows your finger's movement) |
+| Shoot | Automatic while your finger is down |
+| Prime Bomb | Tap the **BOMB** button (bottom left) |
+| Pause | Tap the **II** button (top right), tap anywhere to resume |
+| Play again | Tap the game-over screen (tap the bottom line to change pilot) |
+
+On Android the game goes fullscreen and locks to portrait on your first tap. On iPhone,
+use Share, then **Add to Home Screen**, to remove the browser bars.
 
 ### Pilots
 
@@ -79,7 +86,8 @@ python3 -m http.server 8000
 npm start            # runs: npx serve . -l 8000
 ```
 
-Then open <http://localhost:8000>.
+Then open <http://localhost:8000/?desktop=1> on your computer, or use your computer's
+network address on your phone (same Wi-Fi) for the real thing.
 
 ## Test it
 
