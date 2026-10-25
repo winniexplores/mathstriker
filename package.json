@@ -1,0 +1,12 @@
+{
+  "name": "math-striker",
+  "version": "0.1.0",
+  "description": "A vertical shmup where your score is your health and the enemies are numbers.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes serve . -l 8000",
+    "test": "node tests/smoke.mjs"
+  },
+  "license": "UNLICENSED"
+}
